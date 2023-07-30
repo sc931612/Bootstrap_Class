@@ -1,0 +1,63 @@
+.callout-primary {
+  --callout-border-color: #0a58ca;
+  --callout-bg: #cfe2ff;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-secondary {
+  --callout-border-color: #565e64;
+  --callout-bg: #e2e3e5;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-success {
+  --callout-border-color: #146c43;
+  --callout-bg: #d1e7dd;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-info {
+  --callout-border-color: #0aa2c0;
+  --callout-bg: #cff4fc;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-warning {
+  --callout-border-color: #cc9a06;
+  --callout-bg: #fff3cd;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-danger {
+  --callout-border-color: #b02a37;
+  --callout-bg: #f8d7da;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-light {
+  --callout-border-color: #c6c7c8;
+  --callout-bg: #fefefe;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}
+
+.callout-dark {
+  --callout-border-color: #1a1e21;
+  --callout-bg: #d3d3d4;
+  padding: 10px;
+  border-left: 10px solid var(--callout-border-color);
+  background-color: var(--callout-bg);
+}/*# sourceMappingURL=testCallout2.css.map */

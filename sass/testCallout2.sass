@@ -1,0 +1,26 @@
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../bootstrap/scss/functions"
+// 2. Include any default variable overrides here
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../bootstrap/scss/variables"
+@import "../bootstrap/scss/variables-dark"
+// 4. Include any default map overrides here
+// $theme-colors: ("primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark":$dark, "lake":#00CACA)
+
+@mixin callout-variant($color)
+    --callout-border-color: #{shade-color($color, 20%)}
+    --callout-bg: #{tint-color($color, 80%)}
+    padding: 10px
+    border-left: 10px solid var(--callout-border-color)
+    background-color: var(--callout-bg)
+
+@each $state, $value in $theme-colors
+    $callout-color: $value
+    .callout-#{$state}
+        @include callout-variant($callout-color)
+
+// 5. Include remainder of required parts
+        @import "../bootstrap/scss/bootstrap"

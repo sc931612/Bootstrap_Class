@@ -1,0 +1,12 @@
+@import "../bootstrap/scss/functions"
+//要用bs內的function
+
+@mixin callout-variant($color)
+    --callout-border-color: #{shade-color($color, 20%)}
+    --callout-bg: #{tint-color($color, 80%)}
+    padding: 10px
+    border-left: 10px solid var(--callout-border-color)
+    background-color: var(--callout-bg)
+
+.callout
+    @include callout-variant(#cf2929)

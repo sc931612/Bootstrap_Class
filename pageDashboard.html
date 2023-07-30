@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的 BS5.3.1 版型</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/pageDashboard.css">
+</head>
+
+<body class="d-flex">
+    <nav class="bg-secondary-subtle shadow collapse collapse-horizontal" id="collapseWidthExample">
+
+        <div class="w250px leftMenu p-2">
+            <div class="hstack">
+                <button type="button" class="btn-close ms-auto" data-bs-toggle="collapse"
+                    data-bs-target="#collapseWidthExample" aria-expanded="false"
+                    aria-controls="collapseWidthExample"></button>
+            </div>
+            <div class="d-grid my-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Button
+                </button>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed
+                        when the user activates the relevant trigger.
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-group-vertical my-3 w-100 px-2" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBtn3">Button</button>
+                <div class="collapse w-100" id="collapseBtn3">
+                    <div class="card card-body rounded-0">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati sequi eligendi voluptates
+                        totam ducimus repudiandae recusandae neque vero aliquid nulla.
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="button" class="btn btn-primary">Button</button>
+                <button type="button" class="btn btn-primary">Button</button>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-warning border-warning">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-warning border-warning">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-warning border-warning">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-warning" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main class="p-5 w-100 bg-warning-subtle">
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Toggle width collapse
+            </button>
+        </p>
+        <div class="ctrl py-2">
+            <button type="button" class="btn btn-primary position-relative me-5">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    99+
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+            <button type="button" class="btn btn-primary position-relative">
+                Profile
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                    type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false"
+                    disabled>Disabled</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active border rounded-3 border-top-0 rounded-top-0 bg-secondary-subtle p-3"
+                id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pt-3 justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+                <table class="table table-striped table-hover table-sm text-danger">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="tab-pane fade border rounded-3 border-top-0 rounded-top-0 bg-secondary-subtle"
+                id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="w360px py-2 bg-success-subtle table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade border rounded-bottom-3 border-top-0" id="contact-tab-pane" role="tabpanel"
+                aria-labelledby="contact-tab" tabindex="0">
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                    data-bs-title="Popover title"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                    popover
+                </button>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis omnis quo nulla <span
+                        class="text-danger" data-bs-toggle="popover" data-bs-title="ABC" data-bs-content="abc"> quisquam
+                        magni delectus nesciunt aspernatur
+                        deleniti deserunt</span>
+                    eveniet, ducimus porro fugiat quis dignissimos similique ratione ipsa ad rerum?
+                </div>
+                <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip"
+                        data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no
+                    killer. Content placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip"
+                        data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how
+                    tooltips would look when used in real-world situations. So hopefully you've now seen how <a href="#"
+                        data-bs-toggle="tooltip" data-bs-title="Another one here too">these tooltips on links</a> can
+                    work in <a href="#" data-bs-toggle="tooltip" title="practice!!"> practice</a>, once you use
+                    them on <a href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or
+                    project.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+            </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">4</div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/hMKf5mE3sdo?autoplay=1&mute=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        const myModalEl = document.querySelector('#exampleModal')
+        myModalEl.addEventListener('hidden.bs.modal', event => {
+            event.currentTarget.querySelector(".modal-body").innerHTML = "";
+        })
+
+    </script>
+
+
+</body>
+
+</html>

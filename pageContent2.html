@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flickr</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/pageContent2.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-black" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">flickr</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header class="h700px bg-dark pt-5">
+        <div id="carouselExample" class="carousel slide w-100 h-100 pc-1">
+            <div class="carousel-indicators b-10">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                    class="position-relative active" aria-current="true" aria-label="Slide 1">
+                    <img src="./images/star.jpg" class="h30px w30px position-absolute top-0 start-0" alt="">
+                </button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="position-relative"
+                    aria-label="Slide 2">
+                    <img src="./images/sky.jpg" class="h30px w30px position-absolute top-0 start-0" alt="">
+                </button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class="position-relative"
+                    aria-label="Slide 3">
+                    <img src="./images/ocean.jpg" class="h30px w30px position-absolute top-0 start-0" alt="">
+                </button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="./images/star.jpg" class="w-100 h-100 object-fit-cover mb-1" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/sky.jpg" class="w-100 h-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="./images/ocean.jpg" class="w-100 h-100 object-fit-cover" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section></section>
+
+    <footer class="text-bg-dark">
+        <div class="container">
+            <nav class="nav justify-content-between">
+                <a class="nav-link text-light active" aria-current="page" href="#">Active</a>
+                <a class="nav-link text-light" href="#">Link</a>
+                <a class="nav-link text-light" href="#">Link</a>
+                <a class="nav-link text-light disabled">Disabled</a>
+            </nav>
+            <nav class="nav border-top">
+                <a class="nav-link text-light active" aria-current="page" href="#">Active</a>
+                <a class="nav-link text-light me-auto" href="#">Link</a>
+                <a class="nav-link text-light" href="#">Link</a>
+                <a class="nav-link text-light disabled">Disabled</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        data-bs-theme="dark">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

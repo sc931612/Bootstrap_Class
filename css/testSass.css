@@ -1,0 +1,16 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: #e2a4a4;
+}
+
+.block1 {
+  color: #1858e2;
+  background-color: #e2eb62;
+  margin-left: 20px;
+}
+.block1 .block2 {
+  margin-top: 10px;
+  color: #e2189b;
+  background-color: #0e9a02;
+}/*# sourceMappingURL=testSass.css.map */

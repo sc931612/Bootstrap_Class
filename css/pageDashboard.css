@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+.w250px {
+  width: 250px;
+}
+
+.accordion .accordion-button {
+  box-shadow: none;
+}
+
+.w360px {
+  width: 360px;
+}/*# sourceMappingURL=pageDashboard.css.map */

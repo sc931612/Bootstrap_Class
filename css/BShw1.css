@@ -1,0 +1,17 @@
+.h100px {
+  height: 100px;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fs50px {
+  font-size: 50px;
+}
+
+.Rubik-Microbe {
+  font-family: "Rubik Microbe", cursive;
+}/*# sourceMappingURL=BShw1.css.map */

@@ -1,0 +1,22 @@
+body
+  position: relative
+  &::after
+    content: "XS"
+    font-size: 60px
+    font-weight: bold
+    top: 0
+    right: 0
+    position: absolute
+    color: pink
+    padding: 20px
+    @media (min-width: 576px)
+      content: "SM"
+    @media (min-width: 768px)
+      content: "MD"
+    @media (min-width: 992px)
+      content: "LG"
+      color: gold
+    @media (min-width: 1200px)
+      content: "XL"
+    @media (min-width: 1400px)
+      content: "XXL"
